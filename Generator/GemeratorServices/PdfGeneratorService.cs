@@ -25,11 +25,9 @@ namespace Generator.GemeratorServices
             // Загрузка пользовательского шрифта
             string fontPath = System.IO.Path.Combine(Environment.CurrentDirectory, "shrift.ttf");
             PdfFont font = PdfFontFactory.CreateFont(fontPath);
-            PdfFont boldFont = PdfFontFactory.CreateFont(System.IO.Path.Combine(Environment.CurrentDirectory, "Bold.ttf"), PdfEncodings.IDENTITY_H);
             document.SetFont(font);
-            document.SetBold().SetFont(boldFont);
 
-            Image victoryImage = new Image(ImageDataFactory.Create("Victory.jpg")); //победили в 45-м
+            Image victoryImage = new Image(ImageDataFactory.Create("Victory.png")); //победили в 45-м
             victoryImage
                 .SetWidth(pageSize.GetWidth() / 1.4f)
                 .SetHeight(pageSize.GetHeight() / 20)
@@ -37,7 +35,7 @@ namespace Generator.GemeratorServices
             victoryImage.ScaleToFit(victoryImage.GetImageWidth(), victoryImage.GetImageHeight());
             document.Add(victoryImage);
 
-            Image frameImage = new(ImageDataFactory.Create("frame.jpg"));   // рамка
+            Image frameImage = new(ImageDataFactory.Create("frame.png"));   // рамка
             frameImage
                 .SetWidth(pageSize.GetWidth() / 1.4f)
                 .SetHeight(pageSize.GetHeight() / 1.3f)
@@ -60,6 +58,8 @@ namespace Generator.GemeratorServices
                 .SetFixedPosition(53, 50);
             rectangleImage.ScaleToFit(rectangleImage.GetImageWidth(), rectangleImage.GetImageHeight());
             document.Add(rectangleImage);
+
+            //Group.png
 
             Canvas canvas = new Canvas(new PdfCanvas(pdf.AddNewPage(pageSize)), new Rectangle(pageSize));
 
