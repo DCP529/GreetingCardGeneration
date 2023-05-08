@@ -46,8 +46,8 @@ namespace Generator.GemeratorServices
             Image backgroundImage = new Image(ImageDataFactory.Create(ReadFully(backgroundFileStream)));   //фото челика 
             backgroundImage
                 .SetWidth(pageSize.GetWidth() / 1.6f)
-                .SetHeight(pageSize.GetHeight() / 1.6f)
-                .SetFixedPosition(53, 60);
+                .SetHeight(pageSize.GetHeight() / 1.7f)
+                .SetFixedPosition(53, 90);
             backgroundImage.ScaleToFit(backgroundImage.GetImageWidth(), backgroundImage.GetImageHeight());
             document.Add(backgroundImage);
 
@@ -55,11 +55,17 @@ namespace Generator.GemeratorServices
             rectangleImage
                 .SetWidth(pageSize.GetWidth() / 1.6f)
                 .SetHeight(pageSize.GetHeight() / 7f)
-                .SetFixedPosition(53, 50);
+                .SetFixedPosition(53, 80);
             rectangleImage.ScaleToFit(rectangleImage.GetImageWidth(), rectangleImage.GetImageHeight());
             document.Add(rectangleImage);
 
-            //Group.png
+            Image downText = new(ImageDataFactory.Create("Group.png"));
+            downText
+                .SetWidth(pageSize.GetWidth() / 1.6f)
+                .SetHeight(pageSize.GetHeight() / 14f)
+                .SetFixedPosition(53, 50);
+            downText.ScaleToFit(downText.GetImageWidth(), downText.GetImageHeight());
+            document.Add(downText);//Group.png
 
             Canvas canvas = new Canvas(new PdfCanvas(pdf.AddNewPage(pageSize)), new Rectangle(pageSize));
 
