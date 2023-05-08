@@ -1,0 +1,12 @@
+C:\Users\Admin\source\repos\opener\Generator\bin\Debug\net7.0\Generator.deps.json
+C:\Users\Admin\source\repos\opener\Generator\bin\Debug\net7.0\Generator.dll
+C:\Users\Admin\source\repos\opener\Generator\bin\Debug\net7.0\Generator.pdb
+C:\Users\Admin\source\repos\opener\Generator\obj\Debug\net7.0\Generator.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\opener\Generator\obj\Debug\net7.0\Generator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\opener\Generator\obj\Debug\net7.0\Generator.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\opener\Generator\obj\Debug\net7.0\Generator.AssemblyInfo.cs
+C:\Users\Admin\source\repos\opener\Generator\obj\Debug\net7.0\Generator.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\opener\Generator\obj\Debug\net7.0\Generator.dll
+C:\Users\Admin\source\repos\opener\Generator\obj\Debug\net7.0\refint\Generator.dll
+C:\Users\Admin\source\repos\opener\Generator\obj\Debug\net7.0\Generator.pdb
+C:\Users\Admin\source\repos\opener\Generator\obj\Debug\net7.0\ref\Generator.dll
