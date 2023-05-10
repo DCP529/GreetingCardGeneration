@@ -61,13 +61,13 @@ namespace Generator.GemeratorServices
             rectangleImage.ScaleToFit(rectangleImage.GetImageWidth(), rectangleImage.GetImageHeight());
             document.Add(rectangleImage);
 
-            Image downText = new(ImageDataFactory.Create("Group.png"));
+            Image downText = new(ImageDataFactory.Create("Group.png"));    //Group.png
             downText
                 .SetWidth(pageSize.GetWidth() / 1.6f)
                 .SetHeight(pageSize.GetHeight() / 14f)
                 .SetFixedPosition(53, 50);
             downText.ScaleToFit(downText.GetImageWidth(), downText.GetImageHeight());
-            document.Add(downText);//Group.png
+            document.Add(downText);
 
             Canvas canvas = new Canvas(new PdfCanvas(pdf.AddNewPage(pageSize)), new Rectangle(pageSize));
 

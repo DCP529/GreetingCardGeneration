@@ -3,7 +3,7 @@
 string image1Path = "image1.png";
 
 FileStream bachgroundFileStream = new FileStream(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, image1Path), FileMode.Open, FileAccess.Read);
-string secondaryText = "Мой родной, мой любимый сынок Артур. Отважный российский солдат, молю Господа нашего оберегать тебя. Горжусь тобой, я всегда рядом, сердцем и душой. Победа будет за нами! Ждем тебя домой, родной."; // Дополнительный текст
+string secondaryText = "День Победы –  особый праздник для всех. В годы испытаний страна в едином порыве поднялась на борьбу с врагом. Одна на всех беда сроднила людей, пробудила патриотизм, героизм и стойкость. Народ одержал в войне Великую Победу, отстояв независимость Родины. День Победы – наполняет сердца гордостью."; // Дополнительный текст
 
 byte[] pdfBytes = PdfGeneratorService.GenerateGreetingCardPDF(bachgroundFileStream, secondaryText);
 File.WriteAllBytes("greeting_card.pdf", pdfBytes);
