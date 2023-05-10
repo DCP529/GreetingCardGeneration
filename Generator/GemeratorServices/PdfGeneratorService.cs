@@ -8,6 +8,8 @@ using iText.IO.Font;
 using iText.Kernel.Pdf.Canvas;
 using iText.Layout;
 using iText.IO.Image;
+using iText.Layout.Layout;
+using iText.Layout.Renderer;
 
 namespace Generator.GemeratorServices
 {
@@ -76,12 +78,23 @@ namespace Generator.GemeratorServices
 
             canvas.Add(openerImage);
 
-            // Помещаем текст на вторую страницу
+            //Помещаем текст на вторую страницу
             document.Add(new AreaBreak(AreaBreakType.NEXT_PAGE));
-            document.Add(new Paragraph(additionalText).SetFontSize(10)
+            Paragraph additionalParagraph = new Paragraph(additionalText)
                 .SetRotationAngle(Math.PI / 2)
-                .SetFont(font).SetMaxWidth(pageSize.GetHeight()).SetMarginTop(60f).SetMarginBottom(10f).SetMarginLeft(200));
+                .SetFont(font)
+                .SetFontSize(10)
+                .SetWidth(pageSize.GetHeight() - 260)
+                .SetMarginTop(60f)
+                .SetMarginBottom(10f)
+                .SetMarginLeft(200);
 
+            if (additionalText.Length > 240)
+            {
+                additionalParagraph.SetFontSize(8);
+            }
+
+            document.Add(additionalParagraph);
             document.Close();
 
             return memoryStream.ToArray();

@@ -10,3 +10,15 @@ C:\Users\Admin\source\repos\opener\Generator\obj\Debug\net7.0\Generator.dll
 C:\Users\Admin\source\repos\opener\Generator\obj\Debug\net7.0\refint\Generator.dll
 C:\Users\Admin\source\repos\opener\Generator\obj\Debug\net7.0\Generator.pdb
 C:\Users\Admin\source\repos\opener\Generator\obj\Debug\net7.0\ref\Generator.dll
+C:\Users\Developer\Documents\GreetingCardGeneration1\Generator\bin\Debug\net7.0\Generator.deps.json
+C:\Users\Developer\Documents\GreetingCardGeneration1\Generator\bin\Debug\net7.0\Generator.dll
+C:\Users\Developer\Documents\GreetingCardGeneration1\Generator\bin\Debug\net7.0\Generator.pdb
+C:\Users\Developer\Documents\GreetingCardGeneration1\Generator\obj\Debug\net7.0\Generator.csproj.AssemblyReference.cache
+C:\Users\Developer\Documents\GreetingCardGeneration1\Generator\obj\Debug\net7.0\Generator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Developer\Documents\GreetingCardGeneration1\Generator\obj\Debug\net7.0\Generator.AssemblyInfoInputs.cache
+C:\Users\Developer\Documents\GreetingCardGeneration1\Generator\obj\Debug\net7.0\Generator.AssemblyInfo.cs
+C:\Users\Developer\Documents\GreetingCardGeneration1\Generator\obj\Debug\net7.0\Generator.csproj.CoreCompileInputs.cache
+C:\Users\Developer\Documents\GreetingCardGeneration1\Generator\obj\Debug\net7.0\Generator.dll
+C:\Users\Developer\Documents\GreetingCardGeneration1\Generator\obj\Debug\net7.0\refint\Generator.dll
+C:\Users\Developer\Documents\GreetingCardGeneration1\Generator\obj\Debug\net7.0\Generator.pdb
+C:\Users\Developer\Documents\GreetingCardGeneration1\Generator\obj\Debug\net7.0\ref\Generator.dll
